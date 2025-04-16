@@ -1,4 +1,3 @@
-
 function generatePrompt() {
   const character = document.getElementById('character').value.trim();
   const pose = document.getElementById('pose').value.trim();
@@ -28,7 +27,13 @@ function generatePrompt() {
     styleDescription = "чистые линии, детализация текстур, мягкие тени и объём, приглушённые цвета, выразительное лицо, лёгкость и элегантность в подаче";
   }
 
-  const prompt = `Создай стикер с ${character}, в ${styleLabel} стиле. Персонаж изображён ${pose}. Он должен быть нарисован в стиле: ${styleDescription}.\n\nОбязательно добавь:\n— Белую равномерную обводку\n— Мягкую серую тень под персонажем\n— Прозрачный фон (PNG)\n— Формат 1:1, размер 512×512 px`;
+  const prompt = `Создай стикер с ${character}, в ${styleLabel} стиле. Персонаж изображён ${pose}. Он должен быть нарисован в стиле: ${styleDescription}.
+
+Обязательно добавь:
+— Белую равномерную обводку
+— Мягкую серую тень под персонажем
+— Прозрачный фон (PNG)
+— Формат 1:1, размер 512×512 px`;
 
   const resultField = document.getElementById('result');
   resultField.value = prompt;
