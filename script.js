@@ -1,3 +1,4 @@
+
 function generatePrompt() {
   const character = document.getElementById('character').value.trim();
   const pose = document.getElementById('pose').value.trim();
