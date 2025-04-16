@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Стикерный Сеня — Генератор Промтов</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Стикерный Сеня</h1>
+    <p>Заполни форму — получи идеальный промт для генерации стикера!</p>
+
+    <label>Кто персонаж?</label>
+    <input type="text" id="character" placeholder="Например, квокка в очках">
+
+    <label>Поза и эмоция:</label>
+    <input type="text" id="pose" placeholder="Сидит, улыбается, лапки на животе">
+
+    <label>Стиль:</label>
+    <select id="style">
+      <option>Акварельный милый стиль</option>
+      <option>Векторный подробный</option>
+      <option>Для стикеров</option>
+      <option>Свой вариант (впиши вручную ниже)</option>
+    </select>
+    <input type="text" id="customStyle" placeholder="Свой стиль (если выбран)">
+
+    <button onclick="generatePrompt()">Сгенерировать промт</button>
+
+    <textarea id="result" readonly></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
